@@ -1,0 +1,12 @@
+name: "cluster-access"
+shortDesc: "Access clusters in a cluster registry"
+longDesc: ""                      # the command long description, for help
+example: ""                       # command example(s), for help
+command: "./dracarys"             # REQUIRED: the command, binary, or script to invoke when running the plugin
+flags:                            # flags supported by the plugin
+  - name: "heat"                  # REQUIRED for each flag: flag name
+    shorthand: "h"                # short version of the flag name
+    desc: "Fire heat"             # REQUIRED for each flag: flag description
+    defValue: "extreme"           # default value of the flag
+tree:                             # allows the declaration of subcommands
+  - ...                           # subcommands support the same set of attributes
